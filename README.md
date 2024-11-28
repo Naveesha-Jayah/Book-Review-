@@ -22,3 +22,7 @@ Node.js and Express.js for handling API routes and server logic
 Database:
 
 MongoDB for storing book reviews, using Mongoose for data modeling and management
+
+### Installation:
+
+
