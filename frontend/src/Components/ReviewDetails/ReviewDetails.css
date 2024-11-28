@@ -1,0 +1,103 @@
+/* ReviewDetails.css */
+
+/* Container for the review details page */
+.review-details-container {
+    background-color: #f4f7fc;
+    padding-top: 20px;
+  }
+  
+  /* Title of the page */
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message style */
+  .error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Table container */
+  .reviews-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  /* Table styles */
+  .reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-table th,
+  .reviews-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .table-header {
+    background-color: #f1f1f1;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .table-data {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .actions {
+    text-align: center;
+  }
+  
+  .no-reviews {
+    text-align: center;
+    padding: 15px;
+    color: #999;
+  }
+  
+  /* Button styles */
+  .update-btn,
+  .delete-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .update-btn {
+    background-color: #4f87e7;
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #416be9;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
