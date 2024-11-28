@@ -39,11 +39,11 @@
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(175, 173, 173, 0.1);
 }
 
 .table-header {
-  background: #282828;
+  background: #595c60;
   color: white;
   text-align: left;
   padding: 10px;
@@ -52,11 +52,13 @@
 .table-data {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  text-align: left;
 }
 
 .table-data.actions {
   display: flex;
   gap: 10px;
+ 
 }
 
 .update-btn,
@@ -69,12 +71,12 @@
 }
 
 .update-btn {
-  background-color: #4c66af;
+  background-color: #363584;
   color: white;
 }
 
 .update-btn:hover {
-  background-color: #45a049;
+  background-color: #161558;
 }
 
 .delete-btn {
@@ -91,3 +93,4 @@
   color: #888;
   padding: 20px;
 }
+

@@ -39,7 +39,7 @@ const AddReview = () => {
     <div className="add-review-container">
       <Nav />
       <div className="form-container">
-        <h1 className="form-title">Add Review</h1>
+        <h1 className="form-title">Add Book Review</h1>
 
         {message && <div className="message">{message}</div>}
 
