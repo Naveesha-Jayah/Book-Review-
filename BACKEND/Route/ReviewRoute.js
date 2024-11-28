@@ -12,5 +12,8 @@ const ReviewController = require("../Controllers/Review");
 router.get("/", ReviewController.getReviews);
 router.post("/", ReviewController.createReview);
 router.get("/:id", ReviewController.getReviewById);
+router.put("/:id", ReviewController.updateReview);
+router.delete("/:id", ReviewController.deleteReview);
+
 
 module.exports = router;

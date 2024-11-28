@@ -59,10 +59,61 @@ const getReviewById = async (req, res, next) => {
   return res.status(200).json({ review });
 };
 
+//Update Review by id
+const updateReview = async (req, res, next) => {
+  const { id } = req.params;
+  const { title, author, rating, reviewText } = req.body;
 
+  let review;
+
+  try {
+    // Find the review by ID
+    review = await Review.findById(id);
+
+    if (!review) {
+      return res.status(404).json({ message: "Review not found" });
+    }
+
+    // Update the review fields
+    review.title = title || review.title;
+    review.author = author || review.author;
+    review.rating = rating !== undefined ? rating : review.rating; // Ensure 0 rating is not ignored
+    review.reviewText = reviewText || review.reviewText;
+
+    // Save the updated review
+    await review.save();
+  } catch (err) {
+    console.error("Error while updating review:", err);
+    return next(err); // Pass error to error-handling middleware
+  }
+
+  return res.status(200).json({ review });
+};
+
+//Delete User Details
+
+const deleteReview = async (req, res, next) => {
+  const { id } = req.params;
+
+  let review;
+
+  try {
+    // Find the review by ID
+    review = await Review.findByIdAndDelete(id);
+  } catch (err) {
+    console.log(err);
+  }
+
+  if (!review) {
+    return res.status(404).json({ message: "Unable to update review Details" });
+  }
+  return res.status(200).json({ review });
+};
 
 
 
 exports.getReviews = getReviews;
 exports.createReview = createReview;
 exports.getReviewById = getReviewById;
+exports.updateReview = updateReview;
+exports.deleteReview = deleteReview;
