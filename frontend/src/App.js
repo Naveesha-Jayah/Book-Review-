@@ -14,7 +14,8 @@ function App() {
       <Route path="/" element={<AddReview/>}/>
         <Route path="/create" element={<AddReview/>}/>
         <Route path="/reviewDetails" element={<ReviewDetails/>}/>
-        <Route path="/update-review/:id" element={<UpdateReview />} /> {/* Add route for update */}
+        <Route path="/update-review/:id" element={<UpdateReview />} />
+
 
       </Routes>
      </React.Fragment>
